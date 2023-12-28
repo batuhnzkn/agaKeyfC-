@@ -3,15 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profesyonel Website</title>
-  <link rel="stylesheet" href="styles.css">
-  <!-- İhtiyaca göre başka CSS dosyalarını veya bağlantıları ekleyebilirsiniz -->
+  <title>Restoran Menüsü</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      background-color: #f8f8f8;
     }
 
     header {
@@ -21,27 +19,7 @@
       text-align: center;
     }
 
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #444;
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #fff;
-      padding: 1em;
-      display: block;
-    }
-
-    main {
+    section {
       max-width: 800px;
       margin: 2em auto;
       padding: 1em;
@@ -49,60 +27,70 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 1em;
+    h2 {
+      color: #333;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 1em;
+    }
+
+    .category {
+      font-weight: bold;
+    }
+
+    .price {
+      float: right;
+      color: #007bff;
     }
   </style>
-  <link rel="icon" href="https://www.google.com/favicon.ico type="image/x-icon">
 </head>
 <body>
 
   <!-- Header Başlangıcı -->
   <header>
-    <h1>Profesyonel Website</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Ana Sayfa</a></li>
-        <li><a href="#about">Hakkımızda</a></li>
-        <li><a href="#services">Hizmetler</a></li>
-        <li><a href="#contact">İletişim</a></li>
-      </ul>
-    </nav>
+    <h1>Restoran Adı</h1>
   </header>
   <!-- Header Bitişi -->
 
-  <!-- Ana İçerik Başlangıcı -->
-  <main>
-    <section id="home">
-      <h2>Ana Sayfa</h2>
-      <p>Web sitenizin ana içeriğini buraya ekleyin.</p>
-    </section>
+  <!-- Menü Başlangıcı -->
+  <section>
+    <h2>Menü</h2>
 
-    <section id="about">
-      <h2>Hakkımızda</h2>
-      <p>Şirketiniz veya projeniz hakkında bilgi ekleyin.</p>
-    </section>
+    <!-- Kategori: Başlangıç -->
+    <ul>
+      <li class="category">Çorba</li>
+      <li>Domates Çorbası <span class="price">10 TL</span></li>
+      <li>Mercimek Çorbası <span class="price">12 TL</span></li>
+      <!-- Diğer çorba öğeleri buraya eklenebilir -->
+    </ul>
+    <!-- Kategori: Bitiş -->
 
-    <section id="services">
-      <h2>Hizmetler</h2>
-      <p>Sunduğunuz hizmetleri listeleyin.</p>
-    </section>
+    <!-- Kategori: Başlangıç -->
+    <ul>
+      <li class="category">Ana Yemekler</li>
+      <li>Et Kavurma <span class="price">25 TL</span></li>
+      <li>Tavuk Izgara <span class="price">20 TL</span></li>
+      <!-- Diğer ana yemek öğeleri buraya eklenebilir -->
+    </ul>
+    <!-- Kategori: Bitiş -->
 
-    <section id="contact">
-      <h2>İletişim</h2>
-      <p>Bize nasıl ulaşabilecekleriyle ilgili bilgileri ekleyin.</p>
-    </section>
-  </main>
-  <!-- Ana İçerik Bitişi -->
+    <!-- Kategori: Başlangıç -->
+    <ul>
+      <li class="category">Tatlılar</li>
+      <li>Baklava <span class="price">15 TL</span></li>
+      <li>Kazandibi <span class="price">18 TL</span></li>
+      <!-- Diğer tatlı öğeleri buraya eklenebilir -->
+    </ul>
+    <!-- Kategori: Bitiş -->
 
-  <!-- Footer Başlangıcı -->
-  <footer>
-    <p>&copy; 2023 Profesyonel Website</p>
-  </footer>
-  <!-- Footer Bitişi -->
+  </section>
+  <!-- Menü Bitişi -->
 
 </body>
 </html>
