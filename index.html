@@ -3,53 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restoran Menüsü</title>
+    <title>Restoran Adı</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw-rIekXoPAz2gJj4zqs-t9tdeA1s7ZJIPuoLtfeA9iw&s'); /* Arka plan resmi URL'si */
-            background-size: cover; /* Resmi sayfa boyutuna uygun şekilde ölçekle */
-            color: #fff; /* Yazı rengi */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-        h1 {
+
+        header {
+            background-color: #333;
+            color: #fff;
             text-align: center;
-            color: #333;
+            padding: 1em 0;
         }
-        .menu-item {
-            margin-bottom: 20px;
-            background-color: rgba(255, 255, 255, 0.7); /* Menü öğelerinin arka plan rengi ve şeffaflığı */
-            padding: 10px;
-            border-radius: 10px;
+
+        nav {
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
         }
-        .item-name {
-            font-weight: bold;
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 1em;
         }
-        .item-price {
-            color: #777;
+
+        section {
+            padding: 2em;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
         }
     </style>
 </head>
 <body>
 
-    <h1>Restoran Adı - Menü</h1>
+    <header>
+        <h1>Restoran Adı</h1>
+    </header>
 
-    <div class="menu-item">
-        <span class="item-name">Başlangıç İtemi 1</span> - <span class="item-price">$10.99</span>
-        <p>Açıklama Başlangıç İtemi 1.</p>
-    </div>
+    <nav>
+        <a href="#">Anasayfa</a>
+        <a href="#">Menü</a>
+        <a href="#">Hakkımızda</a>
+        <a href="#">İletişim</a>
+    </nav>
 
-    <div class="menu-item">
-        <span class="item-name">Ana Yemek 1</span> - <span class="item-price">$15.99</span>
-        <p>Açıklama Ana Yemek 1.</p>
-    </div>
+    <section>
+        <h2>Hoş Geldiniz!</h2>
+        <p>Restoran Adı, sizlere lezzetli ve özel yemekler sunmaktan gurur duyar.</p>
+    </section>
 
-    <div class="menu-item">
-        <span class="item-name">Tatlı 1</span> - <span class="item-price">$7.99</span>
-        <p>Açıklama Tatlı 1.</p>
-    </div>
+    <section>
+        <h2>Menü</h2>
+        <p>İşte bazı özel yemeklerimiz:</p>
+        <ul>
+            <li>Özel İtalyan Makarna</li>
+            <li>Geleneksel Pizza</li>
+            <li>Deniz Ürünleri Risotto</li>
+            <li>Ev Yapımı Tiramisu</li>
+        </ul>
+    </section>
 
-    <!-- İsterseniz daha fazla öğe ekleyebilirsiniz -->
+    <section>
+        <h2>Hakkımızda</h2>
+        <p>Restoran Adı, yıllardır müşterilere en kaliteli hizmeti sunmaktadır. Lezzetli yemeklerimizle tanınır ve seviliriz.</p>
+    </section>
+
+    <section>
+        <h2>İletişim</h2>
+        <p>Bizimle iletişime geçmekten çekinmeyin:</p>
+        <p>Adres: Restoran Caddesi, Şehir</p>
+        <p>Telefon: 0123 456 789</p>
+        <p>Email: info@restoranadi.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Restoran Adı. Tüm hakları saklıdır.</p>
+    </footer>
 
 </body>
 </html>
